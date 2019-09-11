@@ -1,0 +1,284 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.z-index-low {
+  z-index: -1000;
+}
+
+
+/* ----------- FONT ----------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Quicksand&display=swap');
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* ----------- Colors ----------*/
+
+/* #1D4C4B #217B5F #1EA855 #78C468 #E0BD7D */
+/* #817F8D #B28E8D #5D5D47 #877254 #B0C9E6*/
+
+/* https: //coolors.co/aeadb6-ceb7b6-979789-b2a592-ccdcef */
+/* https://coolors.co/1d4c4b-217b5f-1ea855-78c468-e0bd7d */
+
+/* ----------- BackGrounds ----------*/
+
+.background-image {
+  background-image: url('./assets/images/Sky_Palm_Trees.jpg');
+  background-position: center;
+  height: 103vh;
+  position: relative;
+  background-size: cover;
+  width: 100vw;
+  z-index: -500;
+}
+
+/* ----------- Nav -------- */
+
+.main-nav {
+  background-color: rgba(29, 76, 75, 0.8) !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0em;
+  border-radius: 5px;
+}
+
+.nav-item {
+  color: white;
+  /* text-shadow: .25px .25px black; */
+  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  padding: .5em;
+}
+
+.nav-client-portal {
+  color: white;
+  text-shadow: .25px .25px black;
+  font-size: 1.1em;
+  padding: .5em;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.nav-client-portal:hover {
+  background-color: #1EA855;
+  transition: 2s;
+}
+
+.leaf-icon {
+  color: #1EA855;
+}
+
+.leaf-icon:hover {
+  color: #78C468;
+  transition: 1s;
+}
+
+a:hover {
+  color: #1EA855 !important;
+  transition: 1s;
+}
+
+/* ----------------- Landing ----------------- */
+
+.landing-row-one {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.landing-row-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
+}
+
+.landing-middle {
+  border-right: solid .1px #1d4c4b;
+  border-left: solid .1px #1d4c4b;
+}
+
+/* -----------------  About -----------------  */
+
+.about-image {
+  width: 100%;
+  height: 70em;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.about-padding {
+  padding-top: 6em;
+}
+
+.about-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* -----------------  Contact -----------------  */
+
+.carousel-wrapper {
+  /* background-color: #5D5D47; */
+  width: 100%;
+  height: 100%;
+  padding: 5em 5em 0em;
+
+}
+
+.carousel-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 0em;
+}
+
+.caption-one {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 3em;
+  width: 50%;
+}
+
+.caption-two {
+  padding: 3em;
+}
+
+.caption-three {
+  /* position: absolute; */
+  top: 40%;
+}
+
+.caption-four {
+  top: 0;
+
+}
+
+.carousel-images {
+  width: 100%;
+  height: 30em;
+  border-radius: 5px;
+
+}
+
+/* -----------------  Contact -----------------  */
+
+.label {
+  font-family: "Quicksand", sans-serif;
+  color: #1d4c4b !important;
+  /* padding: 0em .5em; */
+  font-size: 1.25em;
+  text-shadow: 0.5px 0.5px white;
+}
+
+button {
+  padding: 1em;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif !important;
+  color: #1d4c4b !important;
+  font-size: 1.25em;
+}
+
+button:hover {
+  color: white !important;
+  background-color: #1D4C4B;
+  transition: 1s;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(163, 163, 163) !important;
+  font-size: .75em;
+  font-weight: 700;
+}
+
+/* -----------------  Services Landing -----------------  */
+
+.service-images {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.service-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 5em 5em;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  margin: 0em 0em;
+  height: 100%;
+  padding: 0em;
+  width: 100%;
+}
+
+.service-link {
+  margin: 0em 6em;
+  padding: 1em 0em;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif !important;
+  color: #1d4c4b !important;
+  font-size: 1.25em;
+  border: solid 1px #D1D1D1;
+}
+
+.service-link:hover {
+  color: white !important;
+  background-color: #1D4C4B;
+  transition: 1s;
+
+}
+
+/* -----------------  Footer -----------------  */
+
+footer {
+  width: 100%;
+  height: 15em;
+  background-color: #1d4c4b;
+  font-weight: lighter;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+/* -----------------  Services Pages -----------------  */
+
+.s-one-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5em 5em;
+}
