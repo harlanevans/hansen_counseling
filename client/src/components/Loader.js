@@ -1,16 +1,16 @@
 import React from "react";
 import "./Loader.css";
-import { WhiteBGGlobal } from "../Global";
+import { Fade } from 'react-reveal';
 
 const Loader = () => {
   return (
-    <WhiteBGGlobal>
-    <div className="loader">
-      <svg viewBox="25 25 50 50">
-        <circle cx="50" cy="50" r="20"></circle>
-      </svg>
-    </div>
-    </WhiteBGGlobal>
+      <Fade duration={2500} delay={500}>
+      <div className="loader">
+        <svg viewBox="25 25 50 50">
+          <circle cx="50" cy="50" r="20"></circle>
+        </svg>
+      </div>
+      </Fade>
   );
 };
 

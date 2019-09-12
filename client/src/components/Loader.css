@@ -2,11 +2,17 @@ svg {
   width: 5em;
   transform-origin: center;
   animation: rotate 2s linear infinite;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
 }
 
 circle {
   fill: none;
-  stroke: #B0C9E6;
+  stroke: #1D4C4B;
   stroke-width: 2;
   stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
@@ -37,8 +43,12 @@ circle {
 }
 
 .loader {
-  position: absolute;
-  left: 50%;
-  top: 35%;
-  /* z-index:; */
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
 }
