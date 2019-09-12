@@ -1,49 +1,82 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "./Global.css";
 
 // Styled Components
 import { WhiteBGGlobal } from "./Global";
 import { Fade } from "react-reveal";
 
 // IMPORTS
+// Window Size
 import Nav from "./components/Nav";
 import Landing from "./components/Landing";
 import Loader from "./components/Loader";
-import Home from "./components/Home";
+import Window from "./components/Window";
 import About from "./components/About";
-
 import ServOne from "./components/ServeOne";
 import ServTwo from "./components/ServeTwo";
 import ServThree from "./components/ServeThree";
 
+// Mobile Size
+
+import Mobile from "./components/Mobile/Mobile";
+
 class App extends React.Component {
-  state = { pageLoaded: false };
+  state = { pageLoaded: false, width: window.innerWidth };
+
+  componentWillMount() {
+    window.addEventListener("resize", this.handleWindowSizeChange);
+  }
+
+  // make sure to remove the listener
+  // when the component is not mounted anymore
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
 
   componentDidMount = () => {
     this.setState({ pageLoaded: false });
     setTimeout(() => {
       this.setState({ pageLoaded: true });
-    }, 5000);
+    }, 100);
   };
 
   render() {
-    return this.state.pageLoaded === false ? (
-      <Loader />
-    ) : (
-      <>
-        <Nav />
-        <Fade duration={2000}>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/phase-two" component={ServOne} />
-            <Route exact path="/adult-yoga-group" component={ServTwo} />
-            <Route exact path="/youth-yoga-group" component={ServThree} />
-            {/* <Route exact path='/about' component={About} /> */}
-          </Switch>
-        </Fade>
-      </>
-    );
+    const { width } = this.state;
+    const isMobile = width <= 600;
+    // the rest is the same...
+    if (isMobile) {
+      return this.state.pageLoaded === false ? (
+        <Loader />
+      ) : (
+        <>
+          <Fade duration={2000}>
+            <Switch>
+              <Route exact path="/" component={Mobile} />
+            </Switch>
+          </Fade>
+        </>
+      );
+    } else {
+      return this.state.pageLoaded === false ? (
+        <Loader />
+      ) : (
+        <>
+          {/* <Nav /> */}
+          <Fade duration={2000}>
+            <Switch>
+              <Route exact path="/" component={Window} />
+              <Route exact path="/phase-two" component={ServOne} />
+              <Route exact path="/adult-yoga-group" component={ServTwo} />
+              <Route exact path="/youth-yoga-group" component={ServThree} />
+            </Switch>
+          </Fade>
+        </>
+      );
+    }
   }
 }
 

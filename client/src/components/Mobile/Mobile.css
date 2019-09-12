@@ -1,0 +1,65 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.z-index-low {
+  z-index: -1000;
+}
+
+
+/* ----------- FONT ----------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Quicksand&display=swap');
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* ----------- Colors ----------*/
+
+/* #1D4C4B #217B5F #1EA855 #78C468 #E0BD7D */
+/* #817F8D #B28E8D #5D5D47 #877254 #B0C9E6*/
+
+/* https: //coolors.co/aeadb6-ceb7b6-979789-b2a592-ccdcef */
+/* https://coolors.co/1d4c4b-217b5f-1ea855-78c468-e0bd7d */
+
+/* ----------- BackGrounds ----------*/
+
+.background-image {
+  /* background-image: url('../assets/images/Sky_Palm_Trees.jpg'); */
+  background-position: center;
+  height: 103vh;
+  position: relative;
+  background-size: cover;
+  width: 100vw;
+  z-index: -500;
+}
+
+/* --------------- Nav --------------- */
+
+.main-nav {
+  background-color: rgba(29, 76, 75, 0.8) !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0em;
+  width: 100%;
+}
+
+
+/* --------------- Modal --------------- */
+
+.modal-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 20em;
+  width: 20em;
+}
+/* --------------- Nav --------------- */
+/* --------------- Nav --------------- */
+/* --------------- Nav --------------- */
+/* --------------- Nav --------------- */
+/* --------------- Nav --------------- */

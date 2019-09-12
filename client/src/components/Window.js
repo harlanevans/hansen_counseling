@@ -5,10 +5,14 @@ import Services from "./Services";
 import CarouselContact from "./CarouselContact";
 import { WhiteSpace } from "../Global";
 import Footer from './Footer';
+import Nav from './Nav';
+import "../Global.css";
 
-const Home = () => {
+
+const Window = () => {
   return (
     <div className='z-index-low'>
+    <Nav />
       <div id="home">
         <Landing />
       </div>
@@ -27,4 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Window;
