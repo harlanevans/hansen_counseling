@@ -1,18 +1,19 @@
 import React from "react";
 import { SubTitleAbout, AboutText } from "./Styles";
-import Hayley from "../../assets/images/Hayley_wedding.jpg";
+// import Hayley from "../../assets/images/Hayley_wedding.jpg";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
+import { Grid } from "semantic-ui-react";
 
 const AboutMobile = () => {
   return (
     <div className="about-container">
-          <Fade duration={2000}>
-      <div className="about-background">
-        <div className="opacity">
       <Fade duration={2000}>
-        <SubTitleAbout>About Hayley</SubTitleAbout>
-      </Fade>
+        <div className="about-background">
+          <div className="opacity">
+            <Fade duration={2000}>
+              <SubTitleAbout>About Hayley</SubTitleAbout>
+            </Fade>
             <AboutText>
               I moved to the desert seeking healing and learning, and boy did I
               find it! I am a Licensed Professional Counselor, with my academic
@@ -30,13 +31,15 @@ const AboutMobile = () => {
               or Highly Sensitive People, and those people who just need a
               break!
             </AboutText>
+          </div>
         </div>
-      </div>
-          </Fade>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
-      <button>Need More?</button>
+        <div className='about-button-container'>
+          <Link to="/">
+            <button>More About Hayley</button>
+          </Link>
+        </div>
+          {/* <button>Need More?</button> */}
+      </Fade>
     </div>
   );
 };

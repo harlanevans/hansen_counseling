@@ -5,24 +5,33 @@ import AboutMobile from "./AboutMobile";
 import ContactMobile from "./ContactMobile";
 import ServicesMobile from "./ServicesMobile";
 import "./Mobile.css";
+import CarouselMobile from "./CarouselMobile";
+import FooterMobile from "./FooterMobile";
+import { Fade } from "react-reveal";
+// import { WhiteBGGlobal } from './Styles';
 
 const Mobile = () => {
   return (
-    <div>
-      <NavMobile />
-      <div id="home">
-        <LandingMobile />
+    <Fade duration={3000} delay={500}>
+      <div className="width">
+        <NavMobile />
+        <div id="home">
+          <LandingMobile />
+        </div>
+        {/* <WhiteBGGlobal /> */}
+        <div id="about">
+          <AboutMobile />
+        </div>
+        <div id="contact">
+          <ContactMobile />
+        </div>
+        <CarouselMobile />
+        <div id="services">
+          <ServicesMobile />
+        </div>
+        <FooterMobile />
       </div>
-      <div id="about">
-        <AboutMobile />
-      </div>
-      <div id="contact">
-        <ContactMobile />
-      </div>
-      <div id="services">
-        <ServicesMobile />
-      </div>
-    </div>
+    </Fade>
   );
 };
 

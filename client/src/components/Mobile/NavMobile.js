@@ -2,13 +2,13 @@ import React from "react";
 import { Menu, Icon } from "semantic-ui-react";
 import { HashLink } from "react-router-hash-link";
 import NavModal from "./NavModal";
+import { Fade } from 'react-reveal';
 
 class NavMobile extends React.Component {
   state = { showModal: false };
 
   toggleModal = () => {
     const { showModal } = this.state;
-    // debugger
     this.setState({ showModal: !showModal });
     console.log("clicked");
   };
@@ -16,7 +16,7 @@ class NavMobile extends React.Component {
   render() {
     const { showModal } = this.state;
     return (
-      <div>
+      <div style={{width: '95%'}}>
         <Menu secondary fixed="top" className="main-nav">
           <Menu.Item>
             <HashLink to="/#home" smooth>
@@ -35,7 +35,11 @@ class NavMobile extends React.Component {
             </Menu.Item>
           </Menu.Menu>
         </Menu>
-        <NavModal showModal={showModal} />
+        <Fade duration={3000} delay={200}>
+          <div className={showModal ? 'fadeIn-modal' : 'fadeOut-modal'}>
+        <NavModal showModal={showModal} toggleModal={this.toggleModal} />
+        </div>
+        </Fade>
       </div>
     );
   }

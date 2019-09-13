@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { Fade } from "react-reveal";
 
-
 // IMPORTS
 // Window Size
 // import Nav from "./components/Nav";
@@ -29,17 +28,16 @@ class App extends React.Component {
       this.setState({ pageLoaded: true });
     }, 0);
   };
-  
+
   // make sure to remove the listener
   // when the component is not mounted anymore
   componentWillUnmount() {
     window.removeEventListener("resize", this.handleWindowSizeChange);
   }
-  
+
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth });
   };
-  
 
   render() {
     const { width } = this.state;
@@ -53,9 +51,9 @@ class App extends React.Component {
           <Fade duration={2000}>
             <Switch>
               <Route exact path="/" component={Mobile} />
-              <Route exact path='/contact' component={ContactMobile} />
-              <Route exact path='/about' component={AboutMobile} />
-              <Route exact path='/services' component={ServicesMobile} />
+              <Route exact path="/contact" component={ContactMobile} />
+              <Route exact path="/about" component={AboutMobile} />
+              <Route exact path="/services" component={ServicesMobile} />
             </Switch>
           </Fade>
         </>

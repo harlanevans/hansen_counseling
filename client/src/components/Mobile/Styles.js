@@ -36,6 +36,15 @@ export const SubTitleAbout = styled.h1`
   flex-direction: row;
   justify-content: center;
 `;
+export const SubTitleContact = styled.h1`
+  font-family: "Quicksand", sans-serif;
+  color: #1d4c4b;
+  padding: 1em 2em;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
 
 export const AboutText = styled.p`
   font-family: "Quicksand", sans-serif;
@@ -52,3 +61,34 @@ export const AboutText = styled.p`
   width: 100%;
   height: 100%;
 `;
+
+export const WhiteBGGlobal = styled.div`
+  background-color: white;
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  width: 100vw;
+  z-index: -500;
+`;
+
+export const CaptionText = styled.h3`
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 0.5px 0.5px black;
+  letter-spacing: 1px;
+  background-color: rgba(29, 76, 75, 0.5);
+  border-radius: 5px;
+  padding: 1em;
+  width: 100%
+  font-size: 1em;
+`;
+
+export const FooterText = styled.h3`
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  padding: 1em;
+  margin: 0em;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`
