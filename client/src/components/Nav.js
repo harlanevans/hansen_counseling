@@ -1,7 +1,7 @@
 import React from "react";
 import "../Global.css";
 // import { Link } from 'react-router-dom';
-import { Menu, Icon, Dropdown } from "semantic-ui-react";
+import { Menu, Icon } from "semantic-ui-react";
 import { HashLink } from "react-router-hash-link";
 
 const Nav = () => {
@@ -29,7 +29,11 @@ const Nav = () => {
           </HashLink>
         </Menu.Item>
         <Menu.Item>
-          <a href="https://hayley-hansen.clientsecure.me/" target="_blank">
+          <a
+            href="https://hayley-hansen.clientsecure.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="nav-client-portal">Client Portal</div>
           </a>
         </Menu.Item>

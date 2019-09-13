@@ -1,5 +1,5 @@
 import React from "react";
-import { WhiteBGGlobal } from "../Global";
+// import { WhiteBGGlobal } from "../Global";
 import { Grid } from "semantic-ui-react";
 import Image from "../assets/images/Hayley_wedding.jpg";
 import { Fade } from "react-reveal";
@@ -62,7 +62,7 @@ const About = () => {
         </Grid.Column>
         <Grid.Column>
           <Fade right duration={2500}>
-            <img src={Image} className="about-image" style={{borderRadius: '5px'}} />
+            <img src={Image} className="about-image" style={{ borderRadius: '5px' }} alt='hayley'/>
           </Fade>
         </Grid.Column>
       </Grid>

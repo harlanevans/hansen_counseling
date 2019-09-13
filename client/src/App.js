@@ -1,48 +1,45 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-
-// Styled Components
-import { WhiteBGGlobal } from "./Global";
 import { Fade } from "react-reveal";
+
 
 // IMPORTS
 // Window Size
-import Nav from "./components/Nav";
-import Landing from "./components/Landing";
+// import Nav from "./components/Nav";
+// import Landing from "./components/Landing";
 import Loader from "./components/Loader";
 import Window from "./components/Window";
-import About from "./components/About";
+// import About from "./components/About";
 import ServOne from "./components/ServeOne";
 import ServTwo from "./components/ServeTwo";
 import ServThree from "./components/ServeThree";
 
 // Mobile Size
-
 import Mobile from "./components/Mobile/Mobile";
+import ContactMobile from "./components/Mobile/ContactMobile";
+import AboutMobile from "./components/Mobile/AboutMobile";
+import ServicesMobile from "./components/Mobile/ServicesMobile";
 
 class App extends React.Component {
   state = { pageLoaded: false, width: window.innerWidth };
 
-  componentWillMount() {
+  componentDidMount = () => {
     window.addEventListener("resize", this.handleWindowSizeChange);
-  }
-
+    setTimeout(() => {
+      this.setState({ pageLoaded: true });
+    }, 0);
+  };
+  
   // make sure to remove the listener
   // when the component is not mounted anymore
   componentWillUnmount() {
     window.removeEventListener("resize", this.handleWindowSizeChange);
   }
-
+  
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth });
   };
-
-  componentDidMount = () => {
-    this.setState({ pageLoaded: false });
-    setTimeout(() => {
-      this.setState({ pageLoaded: true });
-    }, 100);
-  };
+  
 
   render() {
     const { width } = this.state;
@@ -56,6 +53,9 @@ class App extends React.Component {
           <Fade duration={2000}>
             <Switch>
               <Route exact path="/" component={Mobile} />
+              <Route exact path='/contact' component={ContactMobile} />
+              <Route exact path='/about' component={AboutMobile} />
+              <Route exact path='/services' component={ServicesMobile} />
             </Switch>
           </Fade>
         </>
