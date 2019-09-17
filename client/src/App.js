@@ -57,7 +57,7 @@ class App extends React.Component {
               <Route exact path="/about" component={AboutMobile} />
               <Route exact path="/services" component={ServicesMobile} />
               <Route exact path="/adult-yoga-group" component={AdultYoga} />
-              <Route exact path="/youth-yoga-group" component={AdultYoga} />
+              <Route exact path="/youth-yoga-group" component={YouthYoga} />
             </Switch>
           </Fade>
         </>

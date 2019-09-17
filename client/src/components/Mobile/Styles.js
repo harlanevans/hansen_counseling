@@ -44,9 +44,9 @@ export const SubTitleContact = styled.h1`
   display: flex;
   flex-direction: row;
   justify-content: center;
-`;
-
-export const AboutText = styled.p`
+  `;
+  
+  export const AboutText = styled.p`
   font-family: "Quicksand", sans-serif;
   color: white;
   padding: 0em 2em;
@@ -60,18 +60,18 @@ export const AboutText = styled.p`
   z-index: 100;
   width: 100%;
   height: 100%;
-`;
-
-export const WhiteBGGlobal = styled.div`
+  `;
+  
+  export const WhiteBGGlobal = styled.div`
   background-color: white;
   background-position: center;
   height: 50vh;
   background-size: cover;
   width: 100vw;
   z-index: -500;
-`;
+  `;
 
-export const CaptionText = styled.h3`
+  export const CaptionText = styled.h3`
   font-family: "Open Sans", sans-serif;
   text-shadow: 0.5px 0.5px black;
   letter-spacing: 1px;
@@ -80,9 +80,9 @@ export const CaptionText = styled.h3`
   padding: 1em;
   width: 100%
   font-size: 1em;
-`;
-
-export const FooterText = styled.h3`
+  `;
+  
+  export const FooterText = styled.h3`
   font-family: "Quicksand", sans-serif;
   color: white;
   padding: 1em;
@@ -91,4 +91,11 @@ export const FooterText = styled.h3`
   display: flex;
   flex-direction: row;
   justify-content: center;
-`
+  `
+  
+  export const ServicesText = styled.p`
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
+  color: #1d4c4b;
+  `
+  

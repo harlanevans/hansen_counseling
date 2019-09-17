@@ -331,6 +331,14 @@ a.service-link {
   height: 90vh;
 }
 
+/* --------------- Yoga --------------- */
+
+.yoga-container {
+  padding: 2em;
+  height: 100%;
+  width: 100%;
+  position: center;
+}
 /* --------------- Footer --------------- */
 
 footer {
