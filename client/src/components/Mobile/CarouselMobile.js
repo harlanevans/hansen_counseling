@@ -4,7 +4,7 @@ import PlantsLight from "../../assets/images/C-Plants-One.jpg";
 import Meditate from "../../assets/images/C-Meditate.jpg";
 import PlantsDark from "../../assets/images/C-PlantsDark-Two.jpg";
 import Rocks from "../../assets/images/C-Rocks.jpg";
-import { CaptionText, SubTitle } from "./Styles";
+import { CaptionText, } from "./Styles";
 
 const CarouselMobile = () => {
   return (

@@ -139,7 +139,7 @@ class ImageCarousel extends React.Component {
                     </Form.Group>
                     <Form.TextArea
                       label="Questions?"
-                      className="label"
+                      className="label-area"
                       name="questions"
                       value={questions}
                       onChange={this.handleChange}

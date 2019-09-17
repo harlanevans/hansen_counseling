@@ -18,6 +18,8 @@ import Mobile from "./components/Mobile/Mobile";
 import ContactMobile from "./components/Mobile/ContactMobile";
 import AboutMobile from "./components/Mobile/AboutMobile";
 import ServicesMobile from "./components/Mobile/ServicesMobile";
+import YouthYoga from './components/Mobile/YouthYoga';
+import AdultYoga from './components/Mobile/AdultYoga';
 
 class App extends React.Component {
   state = { pageLoaded: false, width: window.innerWidth };
@@ -54,6 +56,8 @@ class App extends React.Component {
               <Route exact path="/contact" component={ContactMobile} />
               <Route exact path="/about" component={AboutMobile} />
               <Route exact path="/services" component={ServicesMobile} />
+              <Route exact path="/adult-yoga-group" component={AdultYoga} />
+              <Route exact path="/youth-yoga-group" component={AdultYoga} />
             </Switch>
           </Fade>
         </>

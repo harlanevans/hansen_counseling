@@ -16,7 +16,7 @@ class NavMobile extends React.Component {
   render() {
     const { showModal } = this.state;
     return (
-      <div style={{width: '95%'}}>
+      <div>
         <Menu secondary fixed="top" className="main-nav">
           <Menu.Item>
             <HashLink to="/#home" smooth>

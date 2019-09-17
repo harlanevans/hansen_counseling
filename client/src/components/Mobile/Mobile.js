@@ -19,11 +19,11 @@ const Mobile = () => {
           <LandingMobile />
         </div>
         {/* <WhiteBGGlobal /> */}
-        <div id="about">
-          <AboutMobile />
-        </div>
         <div id="contact">
           <ContactMobile />
+        </div>
+        <div id="about">
+          <AboutMobile />
         </div>
         <CarouselMobile />
         <div id="services">

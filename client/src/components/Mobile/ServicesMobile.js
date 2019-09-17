@@ -1,6 +1,6 @@
 import React from "react";
 // import SImage from "../../assets/images/Service-Lotus.jpg";
-import { SubTitleAbout, AboutText } from "./Styles";
+import { SubTitleAbout, } from "./Styles";
 import { NavLink } from "react-router-dom";
 import { Fade } from "react-reveal";
 
@@ -15,9 +15,9 @@ const ServicesMobile = () => {
         <SubTitleAbout>Services</SubTitleAbout>
           <Fade>
             <div className="button-wrapper">
-              <NavLink to="/phase-two" className="service-link">
+              {/* <NavLink to="/phase-two" className="service-link">
                 EMDR Phase Two Group
-                  </NavLink>
+                  </NavLink> */}
               <NavLink to="/adult-yoga-group" className="service-link">
                 Adult Yoga Group
                   </NavLink>

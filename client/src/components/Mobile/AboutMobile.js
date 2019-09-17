@@ -3,7 +3,7 @@ import { SubTitleAbout, AboutText } from "./Styles";
 // import Hayley from "../../assets/images/Hayley_wedding.jpg";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
-import { Grid } from "semantic-ui-react";
+// import { Grid } from "semantic-ui-react";
 
 const AboutMobile = () => {
   return (

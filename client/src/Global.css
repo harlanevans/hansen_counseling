@@ -179,12 +179,16 @@ a:hover {
 
 /* -----------------  Contact -----------------  */
 
-.label {
+.label, .label-area {
   font-family: "Quicksand", sans-serif;
   color: #1d4c4b !important;
-  /* padding: 0em .5em; */
+  padding: 0em 0em;
   font-size: 1.25em;
   text-shadow: 0.5px 0.5px white;
+}
+
+.label-area {
+  padding: 0em !important
 }
 
 button {
